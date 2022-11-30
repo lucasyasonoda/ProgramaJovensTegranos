@@ -13,12 +13,10 @@ btn.addEventListener("click", function(e) {
     const nome2  = name2Input.value;
     const idade2 = idade2Input.value;
 
-    const media = idadeMedia(idade1, idade2);
-
-    console.log(`A idade média de ${nome1} e ${nome2} é de ${media.toFixed(1)} anos`)
+    idadeMedia(idade1, idade2);    
 });
 
 function idadeMedia(idade1, idade2){
     const media = (idade1/2)+(idade2/2);
-    return media;
+    console.log(`A idade média de ${nome1} e ${nome2} é de ${media.toFixed(1)} anos`)
 }
