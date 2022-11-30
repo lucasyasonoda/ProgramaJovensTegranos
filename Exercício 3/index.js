@@ -1,7 +1,6 @@
-const btn = document.querySelector("#Send");
+const btn = document.querySelector("#send");
 
 btn.addEventListener("click", function(e) {
-
     e.preventDefault();
 
     const name1Input = document.querySelector("#Nome1");
@@ -16,10 +15,10 @@ btn.addEventListener("click", function(e) {
 
     const media = idadeMedia(idade1, idade2);
 
-    console.log(`A idade média de ${nome1} e ${nome2} é de ${media.toFixed(2)} anos`)
+    console.log(`A idade média de ${nome1} e ${nome2} é de ${media.toFixed(1)} anos`)
 });
 
 function idadeMedia(idade1, idade2){
-    const media = (idade1 + idade2) / 2;
+    const media = (idade1/2)+(idade2/2);
     return media;
 }
