@@ -15,8 +15,8 @@ btn.addEventListener("click", function(e) {
     
     const area = areaTerreno(width, length)
     const valor= precoTerreo(area, valueMet)
-    alert(`Area do terreno = ${area.toFixed(2)}\nPreço do terreno = ${valor.toFixed(2)}`)
-    
+    console.log(`Area do terreno = ${area.toFixed(2)}\nPreço do terreno = ${valor.toFixed(2)}`)
+
 });
 
 function areaTerreno(width, length){

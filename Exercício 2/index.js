@@ -14,7 +14,7 @@ btn.addEventListener("click", function(e) {
     const perimeter = retPerimeter(base, height)
     const diagonal  = retDiagonal(base, height)
 
-    alert(`ÁREA = ${area.toFixed(4)}\nPERÍMETRO = ${Number(perimeter).toFixed(4)}\nDIAGONAL = ${diagonal.toFixed(4)}`)
+    console.log(`ÁREA = ${area.toFixed(4)}\nPERÍMETRO = ${Number(perimeter).toFixed(4)}\nDIAGONAL = ${diagonal.toFixed(4)}`)
 })
 
 function retArea(base, height){
