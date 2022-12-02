@@ -14,20 +14,21 @@ btn.addEventListener("click", function(e){
 
     areaQ(a);
     areaTri(a, b);
-    areaTra(a, b, c);
+    areaTra((a+b), c);
+    
 });
 
 function areaQ(lado){
-    const areaQ = Math.pow(lado, 2);
-    console.log(`ÁREA DO QUADRADO = ${areaQ.toFixed(4)}`);
+    const area= Math.pow(lado, 2);
+    console.log(`ÁREA DO QUADRADO = ${area.toFixed(4)}`);
 }
     
 function areaTri(base, altura){
-    const areaTri = ((base*altura)/2);
-    console.log(`ÁREA DO TRIÂNGULO = ${areaTri.toFixed(4)}`);
+    const area = ((base*altura)/2);
+    console.log(`ÁREA DO TRIÂNGULO = ${area.toFixed(4)}`);
 }
 
-function areaTra(base1, base2, altura){
-    const areaTra = (((base1+base2)*altura)/2);
-    console.log(`ÁREA DO TRAPÉZIO = ${areaTra.toFixed(4)}`);
+function areaTra(somaBase, altura){
+    var area = (somaBase*altura)/2;
+    console.log(`ÁREA DO TRAPÉZIO = ${area.toFixed(4)}`);
 }
