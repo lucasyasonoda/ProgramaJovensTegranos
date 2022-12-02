@@ -8,9 +8,9 @@ btn.addEventListener("click", function(e){
     const bInput = document.querySelector("#medB");
     const cInput = document.querySelector("#medC");
 
-    const a = aInput.value;
-    const b = bInput.value;
-    const c = cInput.value;
+    const a = Number(aInput.value);
+    const b = Number(bInput.value);
+    const c = Number(cInput.value);
 
     areaQ(a);
     areaTri(a, b);
